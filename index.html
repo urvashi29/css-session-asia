@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Session</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+    <!-- <link rel="stylesheet" href="" type="text/css"> -->
+
+    <!-- internal css -->
+    <style>
+        /* universal selector */
+        * {
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+
+        /* element selector */
+        /* p {
+            color: pink;
+            font-size: 30px;
+            font-weight: bolder;
+        } */
+
+        /* id selector */
+        #style-heading {
+            color: palevioletred;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* class selector */
+        .style-css {
+            color: palegoldenrod;
+            text-align: center;
+            text-decoration: line-through;
+        }
+
+        /* group selector */
+        /* h1, p, div {
+
+        } */
+
+        /* Combinators: descendant, child, general sibling, adjacent sibling*/
+        /* ul li {
+
+        } */
+
+        label {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="style-heading">Welcome to website.</h1>
+
+    <!-- inline css -->
+    <p style="color: red; font-size: 20px;">Hello</p>
+
+    <h2 class="style-css">Learning CSS</h2>
+
+    <p>Hi</p>
+
+    <h2 class="style-css"><span style="color: red; display: block;">Learning </span>basics</h2>
+
+    <ul>
+        <li class="navigation-items">
+            <a href="./about.html" class="navigate-link">About</a>
+        </li>
+        <li class="navigation-items">
+            <a href="./contact.html" class="navigate-link">Contact</a>
+        </li>
+        <li class="navigation-items">
+            <a href="./login.html" class="navigate-link">Login</a>
+        </li>
+    </ul>
+
+    <form>
+        <label>FirstName</label>
+        <input type="text" placeholder="Please enter name">
+    </form>
+
+    <!-- Border, margin, Padding -->
+    <div id="style-border">Border Properties</div>
+
+    <!-- Position -->
+    <div class="style-relative">Relative
+        <div class="style-absolute">Absolute</div>
+    </div>
+
+    <div class="style-sticky">Sticky data</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates quidem eaque architecto vero labore
+        laudantium atque, vel, mollitia cum, nam iusto vitae dolorem quas? Laboriosam id officiis unde corporis
+        exercitationem sunt adipisci voluptate excepturi ipsa, illo possimus quibusdam laborum numquam facere quae quia
+        porro! Similique alias numquam laudantium fugit facere eaque quisquam perferendis consequatur, accusamus sequi
+        corporis voluptates voluptas illo vitae labore quas, molestias officiis recusandae reprehenderit accusantium?
+        Illum nesciunt officiis ad omnis dolore, quod perferendis accusantium ducimus id voluptatum praesentium pariatur
+        culpa vel temporibus nisi iste architecto dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, libero? Maxime magni nobis doloremque a
+        earum deserunt quidem, odit voluptatem eaque. Soluta iure quo eum accusantium deleniti impedit similique atque
+        maxime ex esse, est neque quos aliquid laboriosam? Ullam laborum aperiam dignissimos reiciendis? Quisquam
+        explicabo reiciendis asperiores adipisci, quas consectetur quis modi nam est sequi error ab ex, maxime quia
+        dolore quidem. Sapiente autem animi nam, ipsa odio labore maiores quisquam numquam enim rem a tempore facilis
+        veniam obcaecati hic error saepe architecto vel, modi suscipit ut molestiae atque, et temporibus. Inventore
+        nulla dolores reprehenderit blanditiis, totam deserunt fuga sunt.
+
+    </p>
+
+    <div class="style-sticky">Sticky</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates quidem eaque architecto vero labore
+        laudantium atque, vel, mollitia cum, nam iusto vitae dolorem quas? Laboriosam id officiis unde corporis
+        exercitationem sunt adipisci voluptate excepturi ipsa, illo possimus quibusdam laborum numquam facere quae quia
+        porro! Similique alias numquam laudantium fugit facere eaque quisquam perferendis consequatur, accusamus sequi
+        corporis voluptates voluptas illo vitae labore quas, molestias officiis recusandae reprehenderit accusantium?
+        Illum nesciunt officiis ad omnis dolore, quod perferendis accusantium ducimus id voluptatum praesentium pariatur
+        culpa vel temporibus nisi iste architecto dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, libero? Maxime magni nobis doloremque a
+        earum deserunt quidem, odit voluptatem eaque. Soluta iure quo eum accusantium deleniti impedit similique atque
+        maxime ex esse, est neque quos aliquid laboriosam? Ullam laborum aperiam dignissimos reiciendis? Quisquam
+        explicabo reiciendis asperiores adipisci, quas consectetur quis modi nam est sequi error ab ex, maxime quia
+        dolore quidem. Sapiente autem animi nam, ipsa odio labore maiores quisquam numquam enim rem a tempore facilis
+        veniam obcaecati hic error saepe architecto vel, modi suscipit ut molestiae atque, et temporibus. Inventore
+        nulla dolores reprehenderit blanditiis, totam deserunt fuga sunt.
+
+    </p>
+
+    <div class="style-fixed">Fixed</div>
+
+    <!-- pseudo class -->
+    <a href="https://www.amazon.in" id="styling-achor">Amazon</a>
+    <p id="style-child">
+        Hi, today we are <b>looking text</b> at CSS.
+    </p>
+
+    <h1>Heading</h1>
+
+    <ul style="margin-left: auto; margin-right: auto; width: 100px;">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <img src="./images/cover_js.jpg" alt="js">
+
+    <div style="text-align: center; width: 100px; margin-left: auto; margin-right: auto;">
+        Hi, this is alina.</div>
+</body>
+
+</html>
+
+<!-- Emailers html: Internal css -->
+
+<!-- inline -> span, formatting elements(sup, sub, del), quotation elmented(q), a
+block -> p, div, semantic elements, h
+inline-block -->

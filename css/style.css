@@ -1,0 +1,154 @@
+/* px -> pixel */
+
+/* Border, margin, Padding */
+#style-border {
+    /* for position static: top, right, bottom, left doesn't work */
+    /* position: static; */
+
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+
+    /* border-left: 3px dotted red; */
+    /* border-width style color */
+    border: 3px dotted red;
+
+    /* border-radius: 50%; */
+
+    /* margin */
+    /* margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; */
+
+    /* all */
+    /* margin: 10px; */
+
+    /* top/bottom left/right */
+    margin: 10px 20px;
+
+    /* all */
+    padding: 20px;
+
+    /* top/bottom left/right */
+    padding: 20px 10px;
+
+
+}
+
+.navigation-items {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navigate-link {
+    text-decoration: none;
+}
+
+/* Position */
+.style-relative {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.style-absolute {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+.style-sticky {
+    background-color: aqua;
+    height: 60px;
+    position: sticky;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.style-fixed {
+    background-color: teal;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 20px;
+}
+
+/* pseudo class */
+/* selector:pseudo-class {
+
+} */
+
+/* link */
+/* unvisited */
+#styling-achor:link {
+    color: orange;
+    text-decoration: none;
+}
+
+#styling-achor:visited {
+    color: powderblue;
+}
+
+#styling-achor:hover {
+    color: palevioletred;
+}
+
+#styling-achor:active {
+    color: teal;
+}
+
+p b:first-child {
+    color: aqua;
+}
+
+/* opacity: 0 to 1 */
+img:hover {
+    opacity: 0.7;
+}
+
+/* pseudo elements */
+/* selector::pseudo-elements {
+
+} */
+
+p::first-line {
+    color: blue;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+
+ul li::marker {
+    color: red;
+}
+
+/* ::placeholder */
+
+/* ::scrollbar */
+
+h1::before {
+    content: url('../images/cover_js.jpg');
+}
+
+h1::after {
+    content: url('../images/cover_js.jpg');
+}
+
